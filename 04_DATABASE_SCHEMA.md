@@ -17,7 +17,7 @@
 
 ### profiles
 - `user_id` (PK, FK to users.id): ユーザーID
-- `nickname` (varchar): 表示名
+- `nickname` (varchar(20), not null): 表示名
 - `bio` (text): 自己紹介文
 - `address_area` (varchar(100), not null): 居住エリア
 
