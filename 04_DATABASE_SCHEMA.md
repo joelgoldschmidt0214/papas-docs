@@ -19,7 +19,7 @@
 - `user_id` (PK, FK to users.id): ユーザーID
 - `nickname` (varchar): 表示名
 - `bio` (text): 自己紹介文
-- `address_area` (varchar): 居住エリア
+- `address_area` (varchar(100), not null): 居住エリア
 
 ### posts
 - `id` (PK, int, auto_increment): 投稿ID
