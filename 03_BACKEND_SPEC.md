@@ -12,7 +12,7 @@
 - 認証が必要なエンドポイントは、JWT認証で保護する。
 
 ## 3. 認証フロー
-1. **ログイン:** `POST /api/v1/auth/login` で成功すると、バックエンドは`access_token`を`HttpOnly`のCookieにセットして返す。
+1. **ログイン:** `POST /api/v1/auth/login` で成功すると、バックエンドは`access_token`を`HttpOnly`、`Secure`、および `SameSite` 属性付きのCookieにセットして返す。
 2. **認証:** 以降のリクエストはCookieが自動送信され、バックエンドがJWTを検証する。
 
 ## 4. APIエンドポイント一覧 (随時更新)
