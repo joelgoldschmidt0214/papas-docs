@@ -300,7 +300,7 @@ export const loginSchema = z.object({
 **実装例: tailwind.config.ts**
 
 ```typescript
-// filepath: src/tailwind.config.ts
+// filepath: tailwind.config.ts
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
