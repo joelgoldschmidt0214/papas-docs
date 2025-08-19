@@ -96,21 +96,21 @@ papas-frontend/
 ```mermaid
 flowchart TD
     subgraph "未ログイン"
-        A[/login] --> B[/login/confirm]
+        A[login] --> B[login_confirm]
     end
 
     subgraph "ログイン後"
-        B --> C[/home]
-        C --> D[/mypage]
-        C --> E[/compose]
-        C --> F[/timeline]
-        C --> G[/surveys]
+        B --> C[app-home]
+        C --> D[mypage]
+        C --> E[compose]
+        C --> F[timeline]
+        C --> G[surveys]
 
-        D --> D1[/mypage/profile]
-        D1 --> D1_EDIT[/mypage/profile/edit]
-        D --> D2[/mypage/following]
-        D --> D3[/mypage/followers]
-        D --> D4[/mypage/notifications]
+        D --> D1[mypage_profile]
+        D1 --> D1_EDIT[mypage_profile_edit]
+        D --> D2[mypage_following]
+        D --> D3[mypage_followers]
+        D --> D4[mypage_notifications]
     end
 ```
 
