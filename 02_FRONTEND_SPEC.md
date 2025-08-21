@@ -1,5 +1,44 @@
 # 02_FRONTEND_SPEC.md: フロントエンド仕様書
 
+## 0. 開発進捗とタスクの共有byえとー
+
+### 雛形ベースができてURLが既に存在するページ
+- Home
+- Login
+  - Login Confirm
+- My Page
+  - My Page Profile
+
+### まだ開発中のページ
+- timeline
+- compose
+- surveys
+
+### 上記ページから派生するページの作成も必要
+- 細かいページはFigmaを参照
+- page/following
+- page/followers
+- page/profile/edit
+- page/notifications
+- compose-01
+- compose-02
+- timelineのタブバーの分岐
+- surveysのタブバーの分岐
+
+### 今考えられるタスク
+- フッター周り
+- 変数、定数の統一
+- 画像の位置
+- mypageのテキストが白字なってて見にくい
+- アイコンの調整
+- レスポンス設定（全ページ）
+- 繰り返し使うヘッダーの整備（コンポーネント化したら使いまわせるはず）
+- 画像がはみ出しており、サイズ調整が必要
+- ボタンを押したときのページ変遷の実装
+
+過去のプルリクエスト一覧でも各々のページにおける課題などが確認できます  
+https://github.com/tech0-gen10-papas/papas-frontend/pulls?q=is%3Apr+is%3Aclosed
+
 ## 1. 技術スタック
 - **フレームワーク:** Next.js (TypeScript, App Router)
 - **UIライブラリ:** Tailwind CSS
@@ -62,6 +101,7 @@ papas-frontend/
 ├─ next.config.ts
 ├─ eslint.config.mjs
 ├─ next-env.d.ts
+├─ tailwind.config.json         # Tailwind CSS 設定ファイル（新規追加）
 ```
 
 - `src/app/login/`: ログイン画面
@@ -129,7 +169,21 @@ flowchart TD
 
 > ディレクトリ・URLは英語・小文字・ケバブケース・階層化で統一してください。
 
-## 5. API連携
+## 5. page.tsx以外に更新したファイル
+
+### tailwind.config では下記を更新しました
+
+- ブランドカラー・フォントは Figma デザインに準拠
+- Tailwind のカスタムカラーは `brand.*` や `text.*` で統一
+- 日本語フォントは `Noto Sans JP` を使用
+- グラデーション背景も利用可能
+- 設定ファイルは `tailwind.config.ts` で管理（Next.js App Router 対応済み）
+
+### 画像やアイコンのpublic/への格納
+
+- まだ足りてないアイコンなども多いです、適宜プッシュしていきます。
+
+## 6. API連携
 - バックエンドチームが提供する `03_BACKEND_SPEC.md` のAPI仕様に従って、データ連携を実装する。
 - 認証にはCookieを利用したJWT認証を採用する。詳細は `03_BACKEND_SPEC.md` を参照。
 
