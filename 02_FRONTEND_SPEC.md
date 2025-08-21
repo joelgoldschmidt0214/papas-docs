@@ -101,7 +101,7 @@ papas-frontend/
 ├─ next.config.ts
 ├─ eslint.config.mjs
 ├─ next-env.d.ts
-├─ tailwind.config.json         # Tailwind CSS 設定ファイル（新規追加）
+├─ tailwind.config.ts           # Tailwind CSS 設定ファイル（新規追加）
 ```
 
 - `src/app/login/`: ログイン画面
