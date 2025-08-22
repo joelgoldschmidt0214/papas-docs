@@ -75,7 +75,7 @@ papas-frontend/
 │  │  ├─ favicon.ico
 │  │  ├─ globals.css
 │  │  ├─ layout.tsx
-│  │  └─ page.tsx                # /開発用の確認ページで各リンクが確認できる
+│  │  └─ page.tsx                # 開発用のリンク確認ページ。Home, Login, My Page, Timeline, Compose, Surveysなど主要ページへの遷移リンクを検証可能
 │  ├─ components/
 │  │  ├─ ui/
 │  │  └─ features/
