@@ -1,0 +1,93 @@
+$ tree . -I '*.pyc|.pytest_cache|.kiro'
+.
+├── DigiCertGlobalRootG2.crt.pem
+├── Dockerfile
+├── Dockerfile.dev
+├── README.md
+├── __pycache__
+├── api
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── likes_bookmarks.py
+│   ├── posts.py
+│   ├── surveys.py
+│   ├── tags.py
+│   └── users.py
+├── auth
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── manager.py
+│   ├── middleware.py
+│   └── routes.py
+├── azure-container-app.yaml
+├── cache
+│   ├── __init__.py
+│   ├── __pycache__
+│   └── manager.py
+├── config.py
+├── database.py
+├── db_control
+│   ├── __pycache__
+│   ├── connect_MySQL.py
+│   ├── create_tables_MySQL.py
+│   ├── crud.py
+│   └── mymodels_MySQL.py
+├── deploy.py
+├── docker-compose.yml
+├── docs
+│   ├── 00_PROJECT_OVERVIEW.md
+│   ├── 01_DEVELOPMENT_GUIDE.md
+│   ├── 02_FRONTEND_SPEC.md
+│   ├── 03_BACKEND_SPEC.md
+│   ├── 04_DATABASE_SCHEMA.md
+│   ├── API_USAGE_EXAMPLES.md
+│   ├── ERROR_CODES.md
+│   ├── PYDANTIC_MODELS_IMPLEMENTATION.md
+│   ├── README.md
+│   ├── TESTING_IMPLEMENTATION.md
+│   ├── er.md
+│   ├── er_2025-08-18.md
+│   ├── er_2025-08-18.png
+│   └── er_2025-08-19.md
+├── error_handlers.py
+├── exceptions.py
+├── logging_config.py
+├── main.py
+├── models
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── requests.py
+│   └── responses.py
+├── nginx.conf
+├── pytest.ini
+├── requirements.txt
+├── scripts
+│   ├── performance_benchmark.py
+│   ├── run_tests.py
+│   └── validate_performance.py
+├── startup.py
+├── test_deployment.py
+├── test_surveys.db
+├── tests
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── locustfile.py
+│   ├── test_auth.py
+│   ├── test_cache_manager.py
+│   ├── test_comments_api.py
+│   ├── test_comprehensive_integration.py
+│   ├── test_error_handling.py
+│   ├── test_likes_bookmarks_api.py
+│   ├── test_load_performance.py
+│   ├── test_models.py
+│   ├── test_models_integration.py
+│   ├── test_performance.py
+│   ├── test_performance_optimized.py
+│   ├── test_posts_api.py
+│   ├── test_surveys_api.py
+│   ├── test_system_monitoring.py
+│   ├── test_tags_api.py
+│   └── test_users_api.py
+└── validate_deployment.py
+
+16 directories, 74 files

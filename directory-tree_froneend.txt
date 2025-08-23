@@ -1,0 +1,56 @@
+$ tree . -I 'docs|node_modules|.next|*.png|*.svg|*.jpg'
+.
+├── Dockerfile
+├── Dockerfile.dev
+├── eslint.config.mjs
+├── git
+├── log.log
+├── next.config.ts
+├── next-env.d.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── public
+│   ├── icons
+│   └── images
+├── README.md
+├── src
+│   ├── app
+│   │   ├── compose
+│   │   │   └── page.tsx
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── home
+│   │   │   └── page.tsx
+│   │   ├── layout.tsx
+│   │   ├── login
+│   │   │   ├── confirm
+│   │   │   │   ├── layout.tsx
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── mypage
+│   │   │   ├── followers
+│   │   │   │   └── page.tsx
+│   │   │   ├── following
+│   │   │   │   └── page.tsx
+│   │   │   ├── notifications
+│   │   │   │   └── page.tsx
+│   │   │   ├── page.tsx
+│   │   │   └── profile
+│   │   │       ├── edit
+│   │   │       │   └── page.tsx
+│   │   │       └── page.tsx
+│   │   ├── page.tsx
+│   │   ├── surveys
+│   │   │   └── page.tsx
+│   │   └── timeline
+│   │       └── page.tsx
+│   └── components
+│       └── ui
+│           ├── BtnNotice.tsx
+│           └── menubar.tsx
+├── tailwind.config.ts
+├── tree.txt
+└── tsconfig.json
+
+20 directories, 33 files
